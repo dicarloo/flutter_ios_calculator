@@ -13,6 +13,24 @@ class Calculator extends StatelessWidget {
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Button(color: Color(0xFF2A2A2C), text: 'AC'),
+                Button(color: Color(0xFF2A2A2C), text: '+/-'),
+                Button(color: Color(0xFF2A2A2C), text: '%'),
+                Button(color: Color(0xFFFF9F0A), text: '÷'),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Button(color: Color(0xFF2A2A2C), text: '7'),
+                Button(color: Color(0xFF2A2A2C), text: '8'),
+                Button(color: Color(0xFF2A2A2C), text: '9'),
+                Button(color: Color(0xFFFF9F0A), text: '×'),
+              ],
+            ),
              Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [

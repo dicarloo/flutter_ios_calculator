@@ -9,11 +9,21 @@ class Button extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
-    return Container(
-      color: color,
+    return Container( 
+      margin: const EdgeInsets.all(4),
       width: screenWidth * 0.2,
       height: screenWidth * 0.2,
-      child: Text(text,style: TextStyle(color: Colors.black),textAlign: TextAlign.center,),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(50),
+        color: color,
+      ),
+      child: Center(
+        child: Text(
+          text,
+          style: const TextStyle(color: Colors.white,fontSize: 30),
+          textAlign: TextAlign.center,
+        ),
+      ),
     );
   }
 }

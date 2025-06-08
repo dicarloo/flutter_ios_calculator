@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button({super.key, required this.color, required this.text});
+  const Button({super.key, required this.color, required this.text, required this.enabled});
   final Color color;
   final String text;
+  final bool enabled;
+
 
   @override
   Widget build(BuildContext context) {
@@ -11,13 +13,19 @@ class Button extends StatelessWidget {
 
     return Container(
       margin: const EdgeInsets.all(4),
-      width: screenWidth * 0.2,
-      height: screenWidth * 0.2,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(50),
-        color: color,
-      ),
-      child: GestureDetector(
+      child: TextButton(
+        onPressed: enabled ? () {
+          print(text);
+        } : null,
+        style: TextButton.styleFrom(
+          padding: const EdgeInsets.all(4),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(50),
+          ),
+          fixedSize: Size(screenWidth * 0.2, screenWidth * 0.2),
+          backgroundColor: color,
+        ),
+      
         child: Center(
           child: Text(
             text,

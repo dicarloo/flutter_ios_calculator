@@ -7,9 +7,9 @@ class Display extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: const Color(0xFF2A2A2C),
-      ),
+      // decoration: BoxDecoration(
+      //   color: const Color(0xFF2A2A2C),
+      // ),
       padding: const EdgeInsets.all(15),
       child: Text(
         text,

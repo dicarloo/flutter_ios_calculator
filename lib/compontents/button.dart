@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Button extends StatelessWidget {
-  const Button({super.key, required this.color, required this.text, required this.enabled});
+  const Button({super.key, required this.color, required this.text, this.onPressed});
   final Color color;
   final String text;
-  final bool enabled;
+  final void Function()? onPressed;
 
 
   @override
@@ -14,9 +14,7 @@ class Button extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.all(4),
       child: TextButton(
-        onPressed: enabled ? () {
-          print(text);
-        } : null,
+        onPressed: onPressed,
         style: TextButton.styleFrom(
           padding: const EdgeInsets.all(4),
           shape: RoundedRectangleBorder(
@@ -29,7 +27,7 @@ class Button extends StatelessWidget {
         child: Center(
           child: Text(
             text,
-            style: const TextStyle(color: Colors.white, fontSize: 30),
+            style: const TextStyle(color: Colors.white, fontSize: 35),
             textAlign: TextAlign.center,
           ),
         ),

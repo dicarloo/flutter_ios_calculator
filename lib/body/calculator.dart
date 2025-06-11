@@ -150,7 +150,7 @@ class _CalculatorState extends State<Calculator> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Button(color: const Color.fromARGB(255, 0, 0, 0), text: ' '),
-                Button(color: const Color(0xFF2A2A2C), text: '0', onPressed: () => {}),
+                Button(color: const Color(0xFF2A2A2C), text: '0', onPressed: () => _onButtonPressed(0)),
                 Button(color: const Color(0xFF2A2A2C), text: '.', onPressed: () => {}),
                 Button(color: const Color(0xFFFF9F0A), text: '=', onPressed: () => equal()),
               ],

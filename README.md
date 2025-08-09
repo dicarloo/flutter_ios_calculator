@@ -1,17 +1,64 @@
-# flutter_ios_calculator
+# 🧮 Flutter iOS-Style Calculator
 
-A new Flutter project.
+> A sleek, minimalist calculator app built entirely with **Flutter**, inspired by the iOS calculator.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
+- **Basic operations**: `+`, `-`, `×`, `÷`
+- **iOS-inspired UI**: Dark theme with rounded buttons
+- **Instant results**: Simple state management without external packages
+- **Offline**: Works without internet or backend
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+| Component | Technology |
+|-----------|------------|
+| Framework | Flutter |
+| Language  | Dart |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# flutter_ios_calculator" 
+---
+
+## 🚀 Getting Started
+
+1. **Clone the repo**  
+   ```bash
+   git clone https://github.com/dicarloo/flutter_ios_calculator.git
+   cd flutter_ios_calculator
+   ```
+
+2. **Install dependencies**  
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the app**  
+   ```bash
+   flutter run
+   ```
+
+---
+
+## 📂 Project Structure
+```
+/lib
+ ├── components/           # Buttons & display widgets
+ ├── body/calculator.dart  # Main calculator UI & logic
+ └── main.dart              # App entry point
+```
+
+---
+
+## 💡 How It Works
+- Tap numbers and operations to perform calculations.
+- Press **AC** to reset.
+- **+/-** changes the sign.
+- **=** shows the result.
+
+---
+
+## 📬 Contact
+**Author:** Dicarlo Aguilar  
+**GitHub:** [dicarloo](https://github.com/dicarloo)  
+**Email:** dicarloaguilar@gmail.com  
